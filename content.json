@@ -1,0 +1,145 @@
+{
+  "girl": {
+    "name": "Наталия",
+    "nickname": "Натулик",
+    "age": 20,
+    "startTitle": "с днём рождения",
+    "startText": "Сегодня тебе двадцать, и у людей, которые тебя любят, накопилось, что тебе сказать. Я попросил Боню всё собрать и доставить лично."
+  },
+  "settings": {
+    "showAnswerAfter": 0
+  },
+  "mascot": {
+    "name": "Принц Боня",
+    "lines": {
+      "intro": "Гав. Тут письма от твоих друзей. Каждое открывается секретным словом, а слова у них.",
+      "letters": "Открывай в любом порядке. Письмо Влада откроется после остальных.",
+      "lettersAllDone": "Все печати сломаны. Осталось письмо от Влада.",
+      "codeIntro": "Регистр и пробелы неважны, одну опечатку прощу.",
+      "codePrompt": "Выполни задание, которое даст {name}, и получишь секретное слово.",
+      "wrongCode": [
+        "Не то слово. Печать держится.",
+        "Хм, печать даже не шелохнулась.",
+        "Близко? Не знаю. Но печать не открывается."
+      ],
+      "codeOnlyFrom": "Это слово знает только {name}. Переспроси.",
+      "question": "Отвечай как помнишь. К буквам и запятым я не придираюсь.",
+      "wrong": [
+        "Почти. Подумай ещё.",
+        "Хм, не совсем. Попробуй ещё разок.",
+        "Я бы тоже не сразу вспомнил. Ещё попытка?"
+      ],
+      "hintReady": "Могу подсказать. Только между нами.",
+      "answerReady": "Ладно, это было непросто. Можешь подсмотреть ответ.",
+      "correct": [
+        "То самое слово. Ломаю печать.",
+        "Верно. Держи письмо.",
+        "Именно так. Открываю."
+      ],
+      "finalLocked": "Это письмо откроется, когда прочитаешь остальные.",
+      "final": "А это от меня. Гав."
+    }
+  },
+  "locks": [
+    {
+      "id": "nastya",
+      "name": "Настюшкинс",
+      "photo": "media/photos/nastya.jpg",
+      "answers": [
+        "67",
+        "6 7",
+        "six seven",
+        "сикс севен",
+        "шестьдесят семь",
+        "шесть семь"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/nastya.mp4",
+      "revealPoster": "media/messages/nastya.jpg"
+    },
+    {
+      "id": "hanna",
+      "name": "Ханночка",
+      "photo": "media/photos/hanna.jpg",
+      "answers": [
+        "коджаджа",
+        "код джа джа",
+        "коджа джа",
+        "kodjadja",
+        "kod dja dja"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/hanna.mp4",
+      "revealPoster": "media/messages/hanna.jpg"
+    },
+    {
+      "id": "sonya",
+      "name": "Сонечка",
+      "photo": "media/photos/sonya.jpg",
+      "answers": [
+        "Дота 2",
+        "дота два",
+        "dota 2",
+        "dota два"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/sonya.mp4",
+      "revealPoster": "media/messages/sonya.jpg"
+    },
+    {
+      "id": "andrey",
+      "name": "Андрей кс2",
+      "photo": "media/photos/andrey.jpg",
+      "answers": [
+        "сколопендра"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/andrey.mp4",
+      "revealPoster": "media/messages/andrey.jpg"
+    },
+    {
+      "id": "ksusha",
+      "name": "Ксюшка веснушка",
+      "photo": "media/photos/ksusha.jpg",
+      "answers": [
+        "заглушка"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/ksusha.mp4",
+      "revealPoster": "media/messages/ksusha.jpg"
+    },
+    {
+      "id": "petr",
+      "name": "Петр",
+      "photo": "media/photos/petr.jpg",
+      "answers": [
+        "алопеция"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/petr.mp4",
+      "revealPoster": "media/messages/petr.jpg"
+    },
+    {
+      "id": "vladimir",
+      "name": "Владимир Марк",
+      "photo": "media/photos/vladimir.jpg",
+      "answers": [
+        "леди баг",
+        "ледибаг",
+        "lady bug",
+        "ladybug",
+        "леди бак"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/vladimir.mp4",
+      "revealPoster": "media/messages/vladimir.jpg"
+    }
+  ],
+  "final": {
+    "title": "С днём рождения, Натулик",
+    "text": "[ТВОЁ ПИСЬМО: напиши своими словами. Абзацы разделяй пустой строкой.]\n\n[Второй абзац.]",
+    "cakeText": "А теперь самое вкусное: тебя ждёт торт. [ГДЕ/КОГДА: допиши]",
+    "signature": "Твой Влад",
+    "from": "Влад"
+  }
+}

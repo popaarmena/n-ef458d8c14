@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#fde8ee">
+  <title>Тебе письма</title>
+  <meta property="og:title" content="Тебе письма">
+  <meta property="og:description" content="Открой, когда будешь готова.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-italic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/marck-script-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><radialGradient id="sealRose" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#e98aa9"/><stop offset=".55" stop-color="#c94677"/><stop offset="1" stop-color="#9c2d58"/></radialGradient><clipPath id="sealClipL"><polygon points="0,0 54,0 46,38 56,60 47,100 0,100"/></clipPath><clipPath id="sealClipR"><polygon points="54,0 100,0 100,100 47,100 56,60 46,38"/></clipPath><radialGradient id="sealGold" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#f7e3b0"/><stop offset=".55" stop-color="#d4a547"/><stop offset="1" stop-color="#a77b25"/></radialGradient></defs></svg>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <main id="app" class="app">
+    <div class="loading">
+      <p>Боня несёт письма…</p>
+    </div>
+  </main>
+
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+
+  <noscript>
+    <p class="noscript">Чтобы открыть письма, включи JavaScript в браузере.</p>
+  </noscript>
+
+  <script src="js/boney.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
