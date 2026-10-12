@@ -133,6 +133,19 @@
       "revealType": "video",
       "revealSrc": "media/messages/vladimir.mp4",
       "revealPoster": "media/messages/vladimir.jpg"
+    },
+    {
+      "id": "liza",
+      "name": "Лиза",
+      "photo": "media/photos/liza.jpg",
+      "answers": [
+        "боня",
+        "bonya",
+        "бонечка"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/liza.mp4",
+      "revealPoster": "media/messages/liza.jpg"
     }
   ],
   "final": {
