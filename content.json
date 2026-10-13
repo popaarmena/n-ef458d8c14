@@ -102,7 +102,7 @@
       "name": "Ксюшка веснушка",
       "photo": "media/photos/ksusha.jpg",
       "answers": [
-        "заглушка"
+        "4217"
       ],
       "revealType": "video",
       "revealSrc": "media/messages/ksusha.mp4",
@@ -150,7 +150,7 @@
     {
       "id": "oldov",
       "name": "Андрей Олдов",
-      "photo": "media/photos/oldov.jpg",
+      "photo": "media/photos/oldov-2.jpg",
       "answers": [
         "желудина",
         "zheludina"
