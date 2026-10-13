@@ -146,6 +146,18 @@
       "revealType": "video",
       "revealSrc": "media/messages/liza.mp4",
       "revealPoster": "media/messages/liza.jpg"
+    },
+    {
+      "id": "oldov",
+      "name": "Андрей Олдов",
+      "photo": "media/photos/oldov.jpg",
+      "answers": [
+        "желудина",
+        "zheludina"
+      ],
+      "revealType": "video",
+      "revealSrc": "media/messages/oldov.mp4",
+      "revealPoster": "media/messages/oldov.jpg"
     }
   ],
   "final": {
