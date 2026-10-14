@@ -141,6 +141,7 @@
   function renderStart() {
     var g = C.girl || {};
     var started = state.opened.length > 0;
+    var album = setting('unlockAll', false);
     app.className = 'app';
     app.innerHTML =
       '<section class="screen start">' +
@@ -150,8 +151,8 @@
           '<h1 class="title-xl js-reset' + rise(2) + '">' + esc(g.startTitle || 'с днём рождения') + '</h1>' +
         '</div>' +
         '<p class="start__text' + rise(3) + '">' + esc(g.startText) + '</p>' +
-        '<div class="' + rise(4) + '">' + mascotHTML(line('intro'), { big: true, withLetter: true }) + '</div>' +
-        '<button class="btn' + rise(5) + '" type="button" data-go="letters">' + (started ? 'Продолжить' : 'Начать') + '</button>' +
+        '<div class="' + rise(4) + '">' + mascotHTML(album ? line('introArchive', line('intro')) : line('intro'), { big: true, withLetter: true }) + '</div>' +
+        '<button class="btn' + rise(5) + '" type="button" data-go="letters">' + (album ? 'Открыть письма' : (started ? 'Продолжить' : 'Начать')) + '</button>' +
       '</section>';
   }
 
@@ -203,7 +204,8 @@
     var total = C.locks.length;
     var done = openedCount();
     var pct = total ? Math.round(done / total * 100) : 0;
-    var bubbleText = allOpen() && !state.finalSeen ? line('lettersAllDone') : line('letters');
+    var bubbleText = setting('unlockAll', false) ? line('lettersArchive', line('letters'))
+      : (allOpen() && !state.finalSeen ? line('lettersAllDone') : line('letters'));
     app.className = 'app is-wide';
     app.innerHTML =
       '<section class="screen letters">' +
@@ -623,6 +625,11 @@
     .then(function (data) {
       C = data;
       C.locks = (C.locks || []).filter(function (l) { return l && l.id != null; });
+      // Режим альбома: после праздника все письма открыты, слова не нужны
+      if (setting('unlockAll', false)) {
+        state.opened = C.locks.map(function (l) { return String(l.id); });
+        state.finalSeen = true;
+      }
       window.addEventListener('hashchange', route);
       route();
     })
